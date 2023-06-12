@@ -11,6 +11,7 @@ class Program
             Branch branch4 = new Branch();
             Branch branch5 = new Branch();
             Branch branch6 = new Branch();
+            Branch branch7 = new Branch();
 
             rootBranch.AddBranch(branch1);
             rootBranch.AddBranch(branch2);
@@ -18,6 +19,7 @@ class Program
             branch3.AddBranch(branch4);
             branch4.AddBranch(branch5);
             branch5.AddBranch(branch6);
+            branch5.AddBranch(branch7);            
 
             int depth = rootBranch.CalculateDepth();
 
